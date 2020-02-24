@@ -1,34 +1,26 @@
-var modal = document.getElementById("MyModalForSignUp");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function () {
-    modal.style.display = "block";
+var signup = document.getElementById("SignUpPopUp");
+var signupbtn = document.getElementById("SignUpBtn");
+var signupclose = document.getElementById("signupclose");
+signupbtn.onclick = function () {
+    signup.style.display = "block";
 }
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-
-
-var modal1 = document.getElementById("MyModalForSignIn");
-var btn1 = document.getElementById("myBtn1");
-var span1 = document.getElementsByClassName("close1")[0];
-btn1.onclick = function () {
-    modal1.style.display = "block";
-}
-span1.onclick = function () {
-    modal1.style.display = "none";
+signupclose.onclick = function () {
+    signup.style.display = "none";
 }
 
+var signin = document.getElementById("SignInPopUp");
+var signinbtn = document.getElementById("SignInBtn");
+var signinclose = document.getElementById("signinclose");
+signinbtn.onclick = function () {
+    signin.style.display = "block";
+}
+signinclose.onclick = function () {
+    signin.style.display = "none";
+}
 
-
-
-
-
-
-var link = document.getElementById("signuplink");
-link.onclick = function () {
+var signuplink = document.getElementById("signuplink");
+signuplink.onclick = function () {
     
-    modal1.style.display = "none";
-    modal.style.display = "block";
+    signin.style.display = "none";
+    signup.style.display = "block";
 }

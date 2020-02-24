@@ -15,28 +15,28 @@
 <body>
 
     <header>
-        <div class="signin">
+        <div class="header">
             <div>
                 <h1>ScriBBler</h1>
                 <h4>Explore, Imagine, Create</h4>
             </div>
-            <div class="submit">
-                <button id="myBtn">Sign Up</button>
-                <button id="myBtn1">Sign In</button>
+            <div class="headerBtn">
+                <button id="SignUpBtn">Sign Up</button>
+                <button id="SignInBtn">Sign In</button>
             </div>
         </div>
     </header>
     <div class="post">
         <a href="html/postslist.html" target="_blank"><button class="btn1">All Posts</button></a>
-        <button id="mybtn2">Create Post</button>
+        <button id="createPostBtn">Create Post</button>
     </div>
 
     <!-- The Modal for Sign Up -->
-    <div id="MyModalForSignUp" class="ModalForSignUp">
+    <div id="SignUpPopUp" class="SignUpPopUp">
 
         <div>
             <form class="modal-content">
-                <span class="close">&times;</span>
+                <span id="signupclose" class="close">&times;</span>
                 <h2>Get Started</h2>
                 <hr>
                 <label for="fname">Name</label>
@@ -59,10 +59,10 @@
 
     </div>
     <!-- The Modal for Sign In -->
-    <div id="MyModalForSignIn" class="ModalForSignIn">
+    <div id="SignInPopUp" class="SignInPopUp">
         <div>
             <form class="modal-content">
-                <span class="close1">&times;</span>
+                <span id="signinclose" class="close">&times;</span>
                 <h2>Welcome Back</h2>
                 <hr>
                 <label for="username">Username</label>
@@ -76,10 +76,10 @@
 
     </div>
     <!-- The Modal for Create Post -->
-    <div id="mymodal2" class="modal2">
+    <div id="createPost" class="createPost">
         <div>
-            <form class="modal-content1">
-                <span class="close2">&times;</span>
+            <form class="modal-content createpostWidth">
+                <span id="createPostClose" class="close">&times;</span>
                 <h2>Pen your content here</h2>
                 <hr>
                 <label for=" title" font-size="15px" font-weight="50">Title</label>
