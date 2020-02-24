@@ -57,10 +57,10 @@ body {
     padding-left: .5em;
 }
 
-span {
+/*span {
     color: gray;
     margin: 1em;
-}
+}*/
 
 .span1 {
     margin-left: 93%;
@@ -78,6 +78,10 @@ span {
 }
 .fa-trash, .fa-ellipsis-h {
     cursor: pointer;
+    
+}
+.trash {
+    margin:1em;
 }
 .DeletePost {
     display: none; /* Hidden by default */

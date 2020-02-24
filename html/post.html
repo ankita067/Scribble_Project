@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../styles/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/post.css">
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div>
+                <h1>ScriBBler</h1>
+                <h4>Explore, Imagine, Create</h4>
+            </div>
+            <div class="headerBtn">
+                <button id="SignUpBtn">Sign Up</button>
+                <button id="SignInBtn">Sign In</button>
+            </div>
+        </div>
+    </header>
+    <div id="post">
+        <div>
+            <h2 id="heading" align="center">Everything you should know about 'module' & 'require' in Node.js </h2>
+        </div>
+        <div class="head">
+            <p id="name">Shristi Gupta</p>
+            <button id="edit" class="editbtn divBtn" onclick="PostEdit()">Edit<i class="fa fa-edit" aria-hidden="true"></i></button>
+        </div>
+
+
+        <p id="postcontent" align="justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Why do we use it?
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+        </p>
+
+
+        <button id="likebtn" onclick="LikeClick()" class="like divBtn"><i class="fa fa-thumbs-up" aria-hidden="true">Like</i></button>
+        <div id="likemessage">Be the first one to like this!</div>
+        <div id="comments">
+            <br><br>
+            <textarea rows="6" cols="100" type="text" id="userComments" placeholder="Leave your comment..."></textarea>
+            <!--<textarea id="words"  rows="6" cols="100" placeholder="Leave a comment..."></textarea>-->
+        </div>
+        <br><br>
+        <button id="addList" class="comment divBtn" onclick="getcomment(userComments)">Comment</button>
+        <div id="allcomments">
+            <p> All Comments</p>
+            <div id="addEventNames"></div>
+        </div>
+    </div>
+    <!-- The Modal for Sign Up -->
+    <div id="SignUpPopUp" class="SignUpPopUp">
+
+        <div>
+            <form class="modal-content">
+                <span id="signupclose" class="close">&times;</span>
+                <h2>Get Started</h2>
+                <hr>
+                <label for="fname">Name</label>
+                <input type="text" placeholder="Enter your name" required />
+
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter your username" required />
+
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" required />
+
+                <label for="text">Confirm Password</label>
+                <input type="password" placeholder="Re-enter your passowrd" required />
+
+                <button>Sign up</button>
+
+            </form>
+
+        </div>
+
+    </div>
+    <!-- The Modal for Sign In -->
+    <div id="SignInPopUp" class="SignInPopUp">
+        <div>
+            <form class="modal-content">
+                <span id="signinclose" class="close">&times;</span>
+                <h2>Welcome Back</h2>
+                <hr>
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter your username" required />
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" required />
+                <button>Sign In</button>
+                <p class="notmember">Not a member? <a id="signuplink" href="#">Sign Up</a></p>
+            </form>
+        </div>
+
+    </div>
+    <!-- list of all posts ends here -->
+
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/post.js"></script>
+
+
+</body>
+
+</html>

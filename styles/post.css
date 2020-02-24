@@ -1,0 +1,57 @@
+.head {
+    display: flex;
+}
+.editable {
+    border: 1px solid #c4c4c4a8;
+}
+#post {
+    margin: 3%;
+    font-family:Arial;
+
+}
+#heading {
+    font-weight: 600;
+    color:black;
+}
+#likemessage {
+    margin-top: 1%;
+}
+.fa {
+    margin-left: 10%;
+}
+#name {
+    font-size: 20px;    
+}
+#userComments {
+    width: 60%;
+    height: 10em;
+}
+.singleComment {
+    width: 60%;
+    border: 11px solid #c4c4c4a8;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    padding:1%;
+}
+.divBtn {
+    color: white;
+    background-color: #ed2553;
+    box-shadow: -1px 10px 20px -8px #ed2553;
+}
+
+.editbtn {
+    font-size: 18px;
+    margin: auto;
+    margin-right:0%;
+    width: 10%;
+}
+
+.like {
+    font-size: 18px;
+    width:10%;
+}
+
+.comment {
+    font-size: 18px;
+    width:12%
+}

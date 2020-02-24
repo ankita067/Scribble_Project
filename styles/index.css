@@ -6,11 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-.notmember {
-    margin-left: 140px;
-    font-weight: 700;
-    font-size: 17px;
-}
+
 input[type=text], input[type=password], textarea {
     width: 95%;
     padding: 15px;
