@@ -1,9 +1,9 @@
-var modal2 = document.getElementById("mymodal2");
-var btn2 = document.getElementById("mybtn2");
-var span2 = document.getElementsByClassName("close2")[0];
-btn2.onclick = function () {
-    modal2.style.display = "block";
+var createPostDiv = document.getElementById("createPost");
+var createPost = document.getElementById("createPostBtn");
+var createPostClose = document.getElementById("createPostClose");
+createPost.onclick = function () {
+    createPostDiv.style.display = "block";
 }
-span2.onclick = function () {
-    modal2.style.display = "none";
+createPostClose.onclick = function () {
+    createPostDiv.style.display = "none";
 }
